@@ -65,22 +65,5 @@ public class Lists {
         List<String> colors1 = List.of("Red", "Green", "White", "Black", "Pink", "Yellow", "Black");
         List<String> colors2 = new ArrayList<>(List.of("Red", "Green", "", "", "Pink", "", "Black"));
         List<String> colors3 = new ArrayList<>(List.of("Red", "Green", "White", "Black", "Pink", "Yellow", "Black"));
-
-        // Pruebas
-        System.out.println(indexOf("Black", colors1)); // Debería imprimir: 3
-        System.out.println(indexOf("Blue", colors1));  // Debería imprimir: -1
-
-        System.out.println(indexOfByIndex("Black", colors1, 1)); // Debería imprimir: 3
-        System.out.println(indexOfByIndex("Black", colors1, 4)); // Debería imprimir: 6
-        System.out.println(indexOfByIndex("Green", colors1, 2)); // Debería imprimir: -1
-
-        System.out.println(indexOfEmpty(colors1)); // Debería imprimir: -1
-        System.out.println(indexOfEmpty(colors2)); // Debería imprimir: 2
-
-        System.out.println(put("Blue", colors2)); // Debería imprimir: 2
-        System.out.println(put("Blue", colors3)); // Debería imprimir: -1
-
-        System.out.println(remove("Black", colors1)); // Debería imprimir: 2
-        System.out.println(remove("Blue", colors3));  // Debería imprimir: 0
     }
 }
